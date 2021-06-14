@@ -27,3 +27,12 @@ Test Timeout
 
   Wait Until Page Contains    ランキング
   Close Browser
+
+Test Implicit Wait
+  Open Browser  ${URL}  ${BROWSER}
+  Maximize Browser Window
+
+  Set Selenium Implicit Wait    10 seconds
+  Input Text    name:should_fail    test
+
+  Close Browser
