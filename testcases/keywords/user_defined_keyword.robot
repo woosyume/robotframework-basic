@@ -5,6 +5,8 @@ Resource  ../../resources/teardown.robot
 Test Timeout  30s
 Test Setup  Setup Start Browser and Maximize
 Test Teardown  Teardown Close Browser Window
+Suite Setup  Before Each Test Suite
+Suite Teardown  After Each Test Suite
 
 *** Variables ***
 # Already defined on resources
