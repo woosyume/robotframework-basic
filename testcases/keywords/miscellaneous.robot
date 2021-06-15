@@ -48,3 +48,14 @@ Perform Keyboard Operations
     Maximize Browser Window
     Press Keys    name:stx    woosyume
     Sleep    5 seconds
+
+Check Tab Behavior
+    # Tab switch is not working
+    Open Browser  ${URL}  ${BROWSER}
+    Switch Window  【楽天市場】売れ筋人気ランキング - 通販で話題の最新トレンドをリアルタイムにチェック!
+    
+    Click Element    xpath://*[@id="rankingGenreBox1"]/span/a
+    ${handle}=  Switch Window  new
+
+    Switch Window  ${handle}
+    Sleep    3 seconds
