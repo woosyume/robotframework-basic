@@ -7,6 +7,7 @@ Resource  ../../resources/initial_practice.robot
 
 *** Test Cases ***
 Test with User Defined Keyword
+    [Documentation]  This test is about ...
     Start Browser and Maximize
 
 Test with User Defined Keyword with Argument and Return

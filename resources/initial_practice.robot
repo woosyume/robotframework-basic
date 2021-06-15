@@ -1,5 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
+Documentation  This file is about user defined keywords with standard style
 
 *** Variables ***
 ${URL}  https://www.rakuten.co.jp/
@@ -12,6 +13,7 @@ Start Browser and Maximize
     Maximize Browser Window
 
 Start Browser and Maximize With Argument
+    [Documentation]  This keyword is...
     [Arguments]  ${UserURL}  ${InputBrowser}
     Open Browser  ${UserURL}  ${InputBrowser}
     Maximize Browser Window
