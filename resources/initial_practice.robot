@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 Documentation  This file is about user defined keywords with standard style
 
 *** Variables ***
-${URL}  https://www.rakuten.co.jp/
+${URL}  https://ranking.rakuten.co.jp/
 ${BROWSER}  Chrome
 
 *** Keywords ***

@@ -1,7 +1,10 @@
 *** Settings ***
 Library  SeleniumLibrary
 Resource  ../../resources/initial_practice.robot
+Resource  ../../resources/teardown.robot
 Test Timeout  30s
+Test Setup  Setup Start Browser and Maximize
+Test Teardown  Teardown Close Browser Window
 
 *** Variables ***
 # Already defined on resources
@@ -14,3 +17,8 @@ Test with User Defined Keyword
 Test with User Defined Keyword with Argument and Return
     ${return}=  Start Browser and Maximize With Argument    https://ranking.rakuten.co.jp/    Chrome
     Log To Console    return value is ${return}
+
+Teardown Behavior Check
+    # [Setup]  Setup Start Browser and Maximize
+    # [Teardown]  Teardown Close Browser Window
+    Input Text    name:stx    test
