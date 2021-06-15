@@ -14,6 +14,8 @@ Start Browser and Maximize
 
 Start Browser and Maximize With Argument
     [Documentation]  This keyword is...
+    # This timeout setting is limiting test running time for this test. e.g. 2mins 8s
+    [Timeout]  10s
     [Arguments]  ${UserURL}  ${InputBrowser}
     Open Browser  ${UserURL}  ${InputBrowser}
     Maximize Browser Window

@@ -1,6 +1,7 @@
 *** Settings ***
 Library  SeleniumLibrary
 Resource  ../../resources/initial_practice.robot
+Test Timeout  30s
 
 *** Variables ***
 # Already defined on resources
