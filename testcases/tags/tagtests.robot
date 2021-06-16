@@ -1,5 +1,7 @@
 *** Settings ***
 Library  SeleniumLibrary
+Default Tags  DEFAULT
+Force Tags  FORCED_TESTS
 
 *** Variables ***
 ${BROWSER}  Chrome
@@ -13,6 +15,10 @@ First Tag Test
 
 Second Tag Test
     [Tags]  Smoke  Sanity
+    Setup Tests
+    Teardown Tests
+
+Default Tag Test
     Setup Tests
     Teardown Tests
 
