@@ -6,4 +6,4 @@ while (i <= 3) :
 for i in range(1, 3) :
     print(i)
 else :
-    print("Loop is ended" + str(i))
+    print("Loop is ended : " + str(i))
