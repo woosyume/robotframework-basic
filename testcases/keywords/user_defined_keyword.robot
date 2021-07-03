@@ -28,3 +28,6 @@ Teardown Behavior Check
 
 Runtime Test
     Create Directory at Runtime  hohoho
+
+Concat Test
+    Concat is available for User Name    kim    aaron

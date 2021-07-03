@@ -31,3 +31,8 @@ Create Directory at Runtime
     create_folder
     create_sub_folder  ${subfoldername}
     Log To Console    "Successful!!"
+
+Concat is available for User Name
+    [Arguments]  ${firstname}  ${lastname} 
+    ${result} =  concat_two_values  ${firstname}  ${lastname}
+    Log To Console    ${result}
