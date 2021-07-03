@@ -1,5 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
+Library  ../ExternalKeywords/UserKeywords.py
 Documentation  This file is about user defined keywords with standard style
 
 *** Variables ***
@@ -24,3 +25,9 @@ Start Browser and Maximize With Argument
     # Put INFO log to log.html
     Log    ${title}
     [Return]  ${title}
+
+Create Directory at Runtime
+    [Arguments]  ${subfoldername}
+    create_folder
+    create_sub_folder  ${subfoldername}
+    Log To Console    "Successful!!"

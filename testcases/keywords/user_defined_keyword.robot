@@ -1,5 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
+Library  ../ExternalKeywords/UserKeywords.py
 Resource  ../../resources/initial_practice.robot
 Resource  ../../resources/teardown.robot
 Test Timeout  30s
@@ -24,3 +25,6 @@ Teardown Behavior Check
     # [Setup]  Setup Start Browser and Maximize
     # [Teardown]  Teardown Close Browser Window
     Input Text    name:stx    test
+
+Runtime Test
+    Create Directory at Runtime  hohoho
