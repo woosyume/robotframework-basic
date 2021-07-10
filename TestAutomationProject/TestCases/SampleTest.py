@@ -13,3 +13,4 @@ from TestAutomationProject.Pages.Top.Test import Test
 obj = Test()
 obj.start_static_test()
 
+
