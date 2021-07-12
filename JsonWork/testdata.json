@@ -1,0 +1,17 @@
+{
+  "Name": "Woosyume",
+  "Age": 31,
+  "PhoneNumber": "010-1234-5678",
+  "City": ["Seoul", "Tokyo", "Osaka"],
+  "Address":
+  {
+    "StreetName": "ABCD",
+    "HouseNumber": "111A",
+    "City": "ABCDEF",
+    "Number":
+    {
+      "Landline": "2121212",
+      "Mobile": "1231231200"
+    }
+  }
+}
